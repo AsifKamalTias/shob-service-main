@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shob Service</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/items.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <header class="header sticky-top">
+        <div class="brand-logo">
+            <a href="./index.html"><img src="./site-identy-img/logo.png" alt="Shob Service"></a>
+        </div>
+        <div class="search-area">
+            <div class="search-box">
+                <div class="input-search">
+                    <input id="search-input" class="search-input" type="search" placeholder="Search Services...">
+                </div>
+                <div class="search-icon">
+                    <a id="serach-head-icon" href="#"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li class="search-icon"><a class="mini-serach-icon" href="./search.html"><i class="fas fa-search"></i></a></li>
+                    <li class="nav-services-menu">
+                        <button class="btn bg-white dropdown-toggle service-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All Services
+                         </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">AC Service/Repair</a>
+                            <a class="dropdown-item" href="#">Cleaning Service</a>
+                            <a class="dropdown-item" href="#">Appliance Repair</a>
+                            <a class="dropdown-item" href="#">Car Care</a>
+                            <a class="dropdown-item" href="#">Pest Control</a>
+                            <a class="dropdown-item" href="#">Electrician</a>
+                            <a class="dropdown-item" href="#">Plumber</a>
+                            <a class="dropdown-item" href="#">Carpenter</a>
+                        </div>
+                    </li>
+                    <li id="btn-signin-nav" class="sign-in" data-toggle="modal" data-target="#signInModal">Sign in</li>
+                    <li id="btn-user-profile-nav"><a class="btn-user-profile-nav" href="#"><img class="user-profile-btn" src="./images/user.jpg" alt="Me"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section id="hero" class="hero">
+            <img src="./site-identy-img/cover.svg" alt="">
+        </section>
+
+        <section id="motto" class="motto">
+            <h2>Your Home Service Partner</h2>
+            <p>get your needed home service on-demand easily</p>
+        </section>
+
+        <section id="items">
+            <div class="items">
+                <div id="ac-service-repair" class="item" data-toggle="modal" data-target="#ac-service-repairModal">
+                    <div class="item-image-container">
+                        <div class="item-image">
+                            <img src="./icons/ac-icon.svg" alt="ac-service-repair">
+                        </div>
+                    </div>
+                    <div class="item-title">
+                        <p>AC Service/Repair</p>
+                    </div>
+                </div>
+                <div id="cleaning-service" class="item">
+                    <div class="item-image-container">
+                        <div class="item-image">
+                            <img src="./icons/vecuum-icon.svg" alt="cleaning-service">
+                        </div>
+                    </div>
+                    <div class="item-title">
+                        <p>Cleaning Service</p>
+                    </div>
+                </div>
+                <div id="appliance-repair" class="item">
+                    <div class="item-image-container">
+                        <div class="item-image">
+                            <img src="./icons/appliance-icon.svg" alt="appliance-repair">
+                        </div>
+                    </div>
+                    <div class="item-title">
+                        <p>Appliance Repair</p>
+                    </div>
+                </div>
+                <div id="car-care" class="item">
+                    <div class="item-image-container">
+                        <div class="item-image">
+                            <img src="./icons/car-icon.svg" alt="car-care">
+                        </div>
+                    </div>
+                    <div class="item-title">
+                        <p>Car Care</p>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <div id="pest-control" class="item">
+                    <div class="item-image-container">
+                        <div class="item-image">
+                            <img src="./icons/pest-icon.svg" alt="pest-control">
+                        </div>
+                    </div>
+                    <div class="item-title">
+                        <p>Pest Control</p>
+                    </div>
+                </div>
+                <div id="electrician" class="item">
+                    <div class="item-image-container">
+                        <div class="item-image">
+                            <img src="./icons/electrician-icon.svg" alt="electrician">
+                        </div>
+                    </div>
+                    <div class="item-title">
+                        <p>Electrician</p>
+                    </div>
+                </div>
+                <div id="plumber" class="item">
+                    <div class="item-image-container">
+                        <div class="item-image">
+                            <img src="./icons/plumber-icon.svg" alt="plumber">
+                        </div>
+                    </div>
+                    <div class="item-title">
+                        <p>Plumber</p>
+                    </div>
+                </div>
+                <div id="carpenter" class="item">
+                    <div class="item-image-container">
+                        <div class="item-image">
+                            <img src="./icons/carpenter-icon.svg" alt="carpenter">
+                        </div>
+                    </div>
+                    <div class="item-title">
+                        <p>Carpenter</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-links">
+            <a href="./about-us.html">About us</a>
+            <a href="./terms-condition.html">Terms and Condition</a>
+            <a href="./privacy-policy.html">Privacy-Policy</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact">Contact us</a>
+        </div>
+        <hr>
+        <div class="container service-place">
+            <p>Servicing in - Dhaka & Chittagong</p>
+        </div>
+        <hr>
+        <div class="container copyright">
+            <div>
+                <img src="./site-identy-img/logo.png" alt="Shob Service">
+                <p>2020-21 Shobservice Technologies BD PVT. LTD.</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/shobservice" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://www.facebook.com/shobservice" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://www.facebook.com/shobservice" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.facebook.com/shobservice" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-contents">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>Sign in</h3>
+                    <div class="modal-inter-contents">
+                        <form>
+                            <div class="form-group">
+                              <label for="InputEmailSignIn">Email address</label>
+                              <input type="email" class="form-control" id="InputEmailSignIn" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="InputPasswordSignIn">Password</label>
+                              <input type="password" class="form-control" id="InputPasswordSignIn" required>
+                            </div>
+                            <div class="form-group form-check">
+                              <input type="checkbox" class="form-check-input checkbox-site-theme" id="remeberPassword">
+                              <label class="form-check-label" for="remeberPassword">Remember me</label>
+                            </div>
+                            
+                            <div class="row justify-content-center">
+                                <button type="submit" class="btn btn-success btn-signInForm">Sign in</button>
+                            </div>
+                        </form>
+                          
+                        <div class="row justify-content-center">
+                            <a class="text-no" href="./forgot-password.html">Forgot Password?</a>
+                        </div>
+                        <br>
+                        <div class="row justify-content-center">
+                            <a class="text-no" href="./sign-up.html">Don't have an account? <span style="text-decoration: underline;">Sign up</span>.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- AC Servicing/Repair Modal -->
+    <div class="modal fade" id="ac-service-repairModal" tabindex="-1" aria-labelledby="ac-service-repairModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-whole">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-heading">
+                        <h5>AC Service/Repair</h5>
+                        <img src="./icons/ac-icon.svg" alt="">
+                    </div>
+                    <div class="modal-main">
+                        <a href="./services/ac-servicing.html" class="modal-link">AC Servicing</a>
+                        <a href="./services/ac-not-cooling.html" class="modal-link">AC Not Cooling/Repair</a>
+                        <a href="#" class="modal-link">AC Installation/Uninstallation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- JS -->
+    <script src="./js/track-user.js"></script>
+</body>
+</html>

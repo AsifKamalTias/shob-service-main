@@ -1,0 +1,45 @@
+:root{
+    --primary: #4db048;
+}
+
+.page-title{
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.sign-up-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+input{
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    padding: 10px;
+    width: 400px;
+}
+label{
+    margin-top: 20px;
+}
+
+.phone-input{
+    width: 350px;
+    margin-left: 15px;
+}
+
+a.sign-up-btn{
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    background-color: var(--primary);
+    border-radius: 30px;
+    padding: 10px;
+}

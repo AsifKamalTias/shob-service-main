@@ -1,0 +1,173 @@
+:root{
+    --primary: #4db048;
+}
+
+.header{
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.brand-logo img{
+    width: 150px;
+}
+
+.search-box{
+    margin-top: 5px;
+    border: 2px solid var(--primary);
+    border-radius: 30px;
+    padding: 10px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-input{
+    border: none;
+    width: 450px;
+}
+
+input:focus{
+    outline: none;
+}
+
+input{
+    caret-color: var(--primary);
+}
+
+.search-icon a{
+    color: var(--primary);
+}
+
+nav{
+    margin-top: 10px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 0 5px;
+}
+
+nav ul li a{
+    color: var(--primary);
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--primary);
+}
+
+.service-dropdown{
+    vertical-align: 3%;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+.sign-in{
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 15px;
+    border: 2px solid var(--primary);
+}
+
+.sign-in:hover{
+    color: var(--primary);
+    background-color: #fff;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.mini-serach-icon{
+    display: none;
+    margin-right: 7px;
+}
+
+a.mini-serach-icon:hover{
+    text-decoration: none;
+}
+
+img.user-profile-btn{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+a.btn-user-profile-nav:hover > img{
+    border: 3px solid var(--primary);
+}
+
+@media only screen and (max-width: 1050px){
+    /*Tablets*/
+    .search-area{
+        display: none;
+    }
+
+    .mini-serach-icon{
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    /*Mobile*/
+    .search-area{
+        display: none;
+    }
+
+    .mini-serach-icon{
+        display: inline-block;
+    }
+
+    .nav-services-menu{
+        display: none;
+    }
+}
+
+/* MODAL */
+
+.modal-contents{
+    padding: 15px;
+}
+
+.modal-contents h3{
+    color: var(--primary);
+    margin-bottom: 30px;
+}
+
+.modal-inter-contents{
+    margin-top: 50px;
+    padding: 0 50px;
+}
+
+.form-control{
+    border: 2px solid var(--primary);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 2px solid var(--primary);
+}
+
+.btn-signInForm{
+    border-radius: 30px;
+    padding: 10px;
+    width: 100px;
+}
+
+a.text-no{
+    color: black;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+a.text-no:hover{
+    color: var(--primary);
+}

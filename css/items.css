@@ -1,0 +1,44 @@
+:root{
+    --primary: #4db048;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 90px;
+    height: 150px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.item-image-container{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 90px;
+    height: 80px;
+}
+
+.item-image{
+    width: 75px;
+    height: 65px;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.item-title{
+    text-align: center;
+    font-size: 12px;
+}
+
+.item:hover > .item-image-container{
+    border: 2px solid var(--primary);
+}
+
+.item:hover > .item-title{
+    color: var(--primary);
+}

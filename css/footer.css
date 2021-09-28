@@ -1,0 +1,59 @@
+:root{
+    --primary: #4db048;
+}
+
+footer{
+    background-color: #F6F4F4;
+    padding: 10px 0;
+}
+
+.footer-links a{
+    font-size: 14px;
+    color: black;
+    padding: 0 10px;
+}
+
+.service-place{
+    margin-top: 10px;
+}
+
+.service-place p{
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.copyright img{
+    width: 150px;
+}
+
+.copyright p{
+    display: inline-block;
+    vertical-align: -3px;
+    margin-left: 5px;
+}
+
+.social-icons i{
+    color: black;
+    margin-top: 20px;
+}
+
+.social-icons a{
+    margin: 0 5px;
+}
+
+.social-icons i:hover{
+    color: var(--primary);
+}
+
+@media only screen and (max-width: 1050px){
+    /*Tablets*/
+    .copyright{
+        flex-direction: column;
+    }
+}
