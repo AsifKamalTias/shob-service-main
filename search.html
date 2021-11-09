@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search | Shob Service</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/items.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/search.css">
+</head>
+<body>
+    <header class="header sticky-top">
+        <div class="brand-logo">
+            <a href="./index.html"><img src="./site-identy-img/logo.png" alt="Shob Service"></a>
+        </div>
+        <div class="search-area">
+            <div class="search-box">
+                <div class="input-search">
+                    <input id="search-input" class="search-input" type="search" placeholder="Search Services...">
+                </div>
+                <div class="search-icon">
+                    <a id="serach-head-icon" href="#"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li class="search-icon"><a class="mini-serach-icon" href="./search.html"><i class="fas fa-search"></i></a></li>
+                    <li class="nav-services-menu">
+                        <button class="btn bg-white dropdown-toggle service-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All Services
+                         </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">AC Service/Repair</a>
+                            <a class="dropdown-item" href="#">Cleaning Service</a>
+                            <a class="dropdown-item" href="#">Appliance Repair</a>
+                            <a class="dropdown-item" href="#">Car Care</a>
+                            <a class="dropdown-item" href="#">Pest Control</a>
+                            <a class="dropdown-item" href="#">Electrician</a>
+                            <a class="dropdown-item" href="#">Plumber</a>
+                            <a class="dropdown-item" href="#">Carpenter</a>
+                        </div>
+                    </li>
+                    <li id="btn-signin-nav" class="sign-in" data-toggle="modal" data-target="#signInModal">Sign in</li>
+                    <li id="btn-user-profile-nav"><a class="btn-user-profile-nav" href="#"><img class="user-profile-btn" src="./images/user.jpg" alt="Me"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <br/>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <form class="card">
+                        <div class="card-body row no-gutters align-items-center">
+                            <!--end of col-->
+                            <div class="col">
+                                <input class="form-control form-control-borderless" id="search-input-user" type="text" placeholder="Search Services...">
+                            </div>
+                            <!--end of col-->
+                            <div class="col-auto">
+                                <button class="btn btn-success" id="search-btn" type="button"><i class="fas fa-search"></i></button>
+                            </div>
+                            <!--end of col-->
+                        </div>
+                    </form>
+                </div>
+                <!--end of col-->
+            </div>
+        </div>
+        <div class="searched-for container" id="searched-for">
+            <p id="searched-for-text"></p>
+        </div>
+        <div class="search-results" id="search-results">
+    
+        </div>
+    </main>
+    <footer>
+        <div class="container footer-links">
+            <a href="./about-us.html">About us</a>
+            <a href="./terms-condition.html">Terms and Condition</a>
+            <a href="./privacy-policy.html">Privacy-Policy</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact">Contact us</a>
+        </div>
+        <hr>
+        <div class="container service-place">
+            <p>Servicing in - Dhaka & Chittagong</p>
+        </div>
+        <hr>
+        <div class="container copyright">
+            <div>
+                <img src="./site-identy-img/logo.png" alt="Shob Service">
+                <p>2020-21 Shobservice Technologies BD PVT. LTD.</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/shobservice" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://www.facebook.com/shobservice" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://www.facebook.com/shobservice" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.facebook.com/shobservice" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="./js/track-user.js"></script>
+    <script src="./js/search.js"></script>
+</body>
+</html>

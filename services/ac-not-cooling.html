@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AC Servicing</title>
+    <title>AC Not Cooling | Shob Service</title>
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -62,7 +62,7 @@
         <section class="services-hero">
             <div class="row">
                 <div class="col-md-6">
-                    <h1 class="service-name">AC Servicing</h1>
+                    <h1 class="service-name">AC Not Cooling</h1>
                 </div>
                 <div class="col-md-6">
                     <img class="service-image" src="../images/ac-cover.png" alt="">
@@ -71,44 +71,54 @@
         </section>
         <section id="items" class="mt-5">
             <div class="items">
-                <div id="ac-basic-service" class="item" data-toggle="modal" data-target="#ac-basic-serviceModal">
+                <div id="ac-gas-charge" class="item" data-toggle="modal" data-target="#ac-gas-chargeModal">
                     <div class="item-image-container">
                         <div class="item-image">
-                            <img src="../icons/ac-icon.svg" alt="ac-basic-service">
+                            <img src="../icons/ac-icon.svg" alt="ac-gas-charge">
                         </div>
                     </div>
                     <div class="item-title">
-                        <p>AC Basic Service</p>
+                        <p>AC Gas Charge</p>
                     </div>
                 </div>
-                <div id="ac-master-service" class="item" data-toggle="modal" data-target="#ac-master-serviceModal">
+                <div id="ac-leakage-repair" class="item" data-toggle="modal" data-target="#ac-leakage-repairModal">
                     <div class="item-image-container">
                         <div class="item-image">
-                            <img src="../icons/ac-icon.svg" alt="ac-master-service">
+                            <img src="../icons/ac-icon.svg" alt="ac-leakage-repair">
                         </div>
                     </div>
                     <div class="item-title">
-                        <p>AC Master Service</p>
+                        <p>AC Leakage Repair</p>
                     </div>
                 </div>
-                <div id="ac-hydro-pressure-wash" class="item" data-toggle="modal" data-target="#ac-hydro-pressure-washModal">
+                <div id="ac-circuit-repair-change" class="item" data-toggle="modal" data-target="#ac-circuit-repair-changeModal">
                     <div class="item-image-container">
                         <div class="item-image">
-                            <img src="../icons/ac-icon.svg" alt="ac-hydro-pressure-wash">
+                            <img src="../icons/ac-icon.svg" alt="ac-circuit-repair-change">
                         </div>
                     </div>
                     <div class="item-title">
-                        <p>AC Hydro Pressure Wash</p>
+                        <p>AC Circuit Repair/Change</p>
                     </div>
                 </div>
-                <div id="ac-water-drop-solution" class="item" data-toggle="modal" data-target="#ac-water-drop-solutionModal">
+                <div id="ac-capacitor-replacement" class="item" data-toggle="modal" data-target="#ac-capacitor-replacementModal">
                     <div class="item-image-container">
                         <div class="item-image">
-                            <img src="../icons/ac-icon.svg" alt="ac-water-drop-solution">
+                            <img src="../icons/ac-icon.svg" alt="ac-capacitor-replacement">
                         </div>
                     </div>
                     <div class="item-title">
-                        <p>AC Water Drop Solution</p>
+                        <p>AC Capacitor Replacement</p>
+                    </div>
+                </div>
+                <div id="ac-compressor-issues" class="item" data-toggle="modal" data-target="#ac-compressor-issuesModal">
+                    <div class="item-image-container">
+                        <div class="item-image">
+                            <img src="../icons/ac-icon.svg" alt="ac-compressor-issues">
+                        </div>
+                    </div>
+                    <div class="item-title">
+                        <p>AC Compressor Issues</p>
                     </div>
                 </div>
             </div>
@@ -184,8 +194,8 @@
         </div>
     </div>
 
-    <!-- AC BASIC SERVICE MODAL -->
-    <div class="modal fade" id="ac-basic-serviceModal" tabindex="-1" role="dialog" aria-labelledby="ac-basic-serviceModal" aria-hidden="true">
+    <!-- AC Gas Charge MODAL -->
+    <div class="modal fade" id="ac-gas-chargeModal" tabindex="-1" role="dialog" aria-labelledby="ac-gas-chargeModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
@@ -195,7 +205,7 @@
                 <div class="booking-form">
                     <div class="row-custom">
                         <div class="booking-info">
-                            <p>AC Basic Service</p>
+                            <p>AC Gas Charge</p>
                             <a href="#">Details</a>
                         </div>
                         <div class="booking-input">
@@ -221,8 +231,8 @@
         </div>
         </div>
     </div>
-    <!-- AC MASTER SERVICE MODAL -->
-    <div class="modal fade" id="ac-master-serviceModal" tabindex="-1" role="dialog" aria-labelledby="ac-master-serviceModal" aria-hidden="true">
+    <!-- AC LEAKAGE REPAIR MODAL -->
+    <div class="modal fade" id="ac-leakage-repairModal" tabindex="-1" role="dialog" aria-labelledby="ac-leakage-repairModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
@@ -232,7 +242,7 @@
                 <div class="booking-form">
                     <div class="row-custom">
                         <div class="booking-info">
-                            <p>AC Master Service</p>
+                            <p>AC Leakage Repair</p>
                             <a href="#">Details</a>
                         </div>
                         <div class="booking-input">
@@ -259,8 +269,8 @@
         </div>
     </div>
 
-    <!-- AC Hydro Pressure Wash Modal -->
-    <div class="modal fade" id="ac-hydro-pressure-washModal" tabindex="-1" role="dialog" aria-labelledby="ac-hydro-pressure-washModal" aria-hidden="true">
+    <!-- AC CIRCUIT REPAIR CHANGE Modal -->
+    <div class="modal fade" id="ac-circuit-repair-changeModal" tabindex="-1" role="dialog" aria-labelledby="ac-circuit-repair-changeModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
@@ -270,7 +280,7 @@
                 <div class="booking-form">
                     <div class="row-custom">
                         <div class="booking-info">
-                            <p>AC Hydro Pressure Wash</p>
+                            <p>AC Circuit Repair/Change</p>
                             <a href="#">Details</a>
                         </div>
                         <div class="booking-input">
@@ -296,8 +306,8 @@
         </div>
         </div>
     </div>
-    <!-- AC Water Drop Solution Modal -->
-    <div class="modal fade" id="ac-water-drop-solutionModal" tabindex="-1" role="dialog" aria-labelledby="ac-water-drop-solutionModal" aria-hidden="true">
+    <!-- AC-capacitor-replacement Modal -->
+    <div class="modal fade" id="ac-capacitor-replacementModal" tabindex="-1" role="dialog" aria-labelledby="ac-capacitor-replacementModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
@@ -307,7 +317,45 @@
                 <div class="booking-form">
                     <div class="row-custom">
                         <div class="booking-info">
-                            <p>AC Water Drop Solution</p>
+                            <p>AC Capacitor Replacement</p>
+                            <a href="#">Details</a>
+                        </div>
+                        <div class="booking-input">
+                            <div class="unit-selector">
+                                <p>Ton(s)</p>
+                                <a id="ac-basic-service-tons-minus" class="value-changer" href="#"><i class="fas fa-minus-square"></i></a>
+                                <input id="ac-basic-service-tons" class="unit" type="text" value="1.5" disabled>
+                                <a id="ac-basic-service-tons-plus" class="value-changer" href="#"><i class="fas fa-plus-square"></i></a>                                
+                            </div>
+                            <div class="unit-selector">
+                                <p>Unit(s)</p>
+                                <a class="value-changer" href="#"><i class="fas fa-minus-square"></i></a>
+                                <input class="unit" type="text" value="1" disabled>
+                                <a class="value-changer" href="#"><i class="fas fa-plus-square"></i></a>
+                            </div>
+    
+                            <p class="price">499 TK</p>
+                            <a class="book" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- AC-Compressor-Issue Modal -->
+    <div class="modal fade" id="ac-compressor-issuesModal" tabindex="-1" role="dialog" aria-labelledby="ac-compressor-issuesModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="booking-form">
+                    <div class="row-custom">
+                        <div class="booking-info">
+                            <p>AC Compressor Issues</p>
                             <a href="#">Details</a>
                         </div>
                         <div class="booking-input">

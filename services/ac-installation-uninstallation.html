@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shob Service</title>
+    <title>AC Installation/Uninstallation | Shob Service</title>
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/items.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/items.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/services.css">
 </head>
 <body>
     <header class="header sticky-top">
         <div class="brand-logo">
-            <a href="./index.html"><img src="./site-identy-img/logo.png" alt="Shob Service"></a>
+            <a href="../index.html"><img src="../site-identy-img/logo.png" alt="Shob Service"></a>
         </div>
         <div class="search-area">
             <div class="search-box">
@@ -57,98 +58,47 @@
             </nav>
         </div>
     </header>
-    <main class="container">
-        <section id="hero" class="hero">
-            <img src="./site-identy-img/cover.svg" alt="">
-        </section>
-
-        <section id="motto" class="motto">
-            <h2>Your Home Service Partner</h2>
-            <p>get your needed home service on-demand easily</p>
-        </section>
-
-        <section id="items">
-            <div class="items">
-                <div id="ac-service-repair" class="item" data-toggle="modal" data-target="#ac-service-repairModal">
-                    <div class="item-image-container">
-                        <div class="item-image">
-                            <img src="./icons/ac-icon.svg" alt="ac-service-repair">
-                        </div>
-                    </div>
-                    <div class="item-title">
-                        <p>AC Service/Repair</p>
-                    </div>
+    <main>
+        <section class="services-hero">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="service-name">AC Installation/Uninstallation</h1>
                 </div>
-                <div id="cleaning-service" class="item">
-                    <div class="item-image-container">
-                        <div class="item-image">
-                            <img src="./icons/vecuum-icon.svg" alt="cleaning-service">
-                        </div>
-                    </div>
-                    <div class="item-title">
-                        <p>Cleaning Service</p>
-                    </div>
-                </div>
-                <div id="appliance-repair" class="item">
-                    <div class="item-image-container">
-                        <div class="item-image">
-                            <img src="./icons/appliance-icon.svg" alt="appliance-repair">
-                        </div>
-                    </div>
-                    <div class="item-title">
-                        <p>Appliance Repair</p>
-                    </div>
-                </div>
-                <div id="car-care" class="item">
-                    <div class="item-image-container">
-                        <div class="item-image">
-                            <img src="./icons/car-icon.svg" alt="car-care">
-                        </div>
-                    </div>
-                    <div class="item-title">
-                        <p>Car Care</p>
-                    </div>
+                <div class="col-md-6">
+                    <img class="service-image" src="../images/ac-cover.png" alt="">
                 </div>
             </div>
+        </section>
+        <section id="items" class="mt-5">
             <div class="items">
-                <div id="pest-control" class="item">
+                <div id="ac-installation" class="item" data-toggle="modal" data-target="#ac-installationModal">
                     <div class="item-image-container">
                         <div class="item-image">
-                            <img src="./icons/pest-icon.svg" alt="pest-control">
+                            <img src="../icons/ac-icon.svg" alt="ac-installation">
                         </div>
                     </div>
                     <div class="item-title">
-                        <p>Pest Control</p>
+                        <p>AC Installation</p>
                     </div>
                 </div>
-                <div id="electrician" class="item">
+                <div id="ac-unistallation-dismantling" class="item" data-toggle="modal" data-target="#ac-unistallation-dismantlingModal">
                     <div class="item-image-container">
                         <div class="item-image">
-                            <img src="./icons/electrician-icon.svg" alt="electrician">
+                            <img src="../icons/ac-icon.svg" alt="ac-unistallation-dismantling">
                         </div>
                     </div>
                     <div class="item-title">
-                        <p>Electrician</p>
+                        <p>AC Uninstallation or Dismantling</p>
                     </div>
                 </div>
-                <div id="plumber" class="item">
+                <div id="ac-installation-uninstallation" class="item" data-toggle="modal" data-target="#ac-installation-uninstallationModal">
                     <div class="item-image-container">
                         <div class="item-image">
-                            <img src="./icons/plumber-icon.svg" alt="plumber">
+                            <img src="../icons/ac-icon.svg" alt="ac-installation-uninstallation">
                         </div>
                     </div>
                     <div class="item-title">
-                        <p>Plumber</p>
-                    </div>
-                </div>
-                <div id="carpenter" class="item">
-                    <div class="item-image-container">
-                        <div class="item-image">
-                            <img src="./icons/carpenter-icon.svg" alt="carpenter">
-                        </div>
-                    </div>
-                    <div class="item-title">
-                        <p>Carpenter</p>
+                        <p>AC Installation Uninstallation</p>
                     </div>
                 </div>
             </div>
@@ -169,7 +119,7 @@
         <hr>
         <div class="container copyright">
             <div>
-                <img src="./site-identy-img/logo.png" alt="Shob Service">
+                <img src="../site-identy-img/logo.png" alt="Shob Service">
                 <p>2020-21 Shobservice Technologies BD PVT. LTD.</p>
             </div>
             <div class="social-icons">
@@ -180,7 +130,6 @@
             </div>
         </div>
     </footer>
-
     <!-- Modal -->
     <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -225,23 +174,74 @@
         </div>
     </div>
 
-    <!-- AC Servicing/Repair Modal -->
-    <div class="modal fade" id="ac-service-repairModal" tabindex="-1" aria-labelledby="ac-service-repairModal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+    <!-- ac-installation MODAL -->
+    <div class="modal fade" id="ac-installationModal" tabindex="-1" role="dialog" aria-labelledby="ac-installationModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <div class="modal-whole">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <div class="modal-heading">
-                        <h5>AC Service/Repair</h5>
-                        <img src="./icons/ac-icon.svg" alt="">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="booking-form">
+                    <div class="row-custom">
+                        <div class="booking-info">
+                            <p>AC Installation</p>
+                            <a href="#">Details</a>
+                        </div>
+                        <div class="booking-input">
+                            <div class="unit-selector">
+                                <p>Ton(s)</p>
+                                <a id="ac-basic-service-tons-minus" class="value-changer" href="#"><i class="fas fa-minus-square"></i></a>
+                                <input id="ac-basic-service-tons" class="unit" type="text" value="1.5" disabled>
+                                <a id="ac-basic-service-tons-plus" class="value-changer" href="#"><i class="fas fa-plus-square"></i></a>                                
+                            </div>
+                            <div class="unit-selector">
+                                <p>Unit(s)</p>
+                                <a class="value-changer" href="#"><i class="fas fa-minus-square"></i></a>
+                                <input class="unit" type="text" value="1" disabled>
+                                <a class="value-changer" href="#"><i class="fas fa-plus-square"></i></a>
+                            </div>
+    
+                            <p class="price">499 TK</p>
+                            <a class="book" href="#">Book Now</a>
+                        </div>
                     </div>
-                    <div class="modal-main">
-                        <a href="./services/ac-servicing.html" class="modal-link">AC Servicing</a>
-                        <a href="./services/ac-not-cooling.html" class="modal-link">AC Not Cooling/Repair</a>
-                        <a href="./services/ac-installation-uninstallation.html" class="modal-link">AC Installation/Uninstallation</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- ac-unistallation-dismantling MODAL -->
+    <div class="modal fade" id="ac-unistallation-dismantlingModal" tabindex="-1" role="dialog" aria-labelledby="ac-unistallation-dismantlingModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="booking-form">
+                    <div class="row-custom">
+                        <div class="booking-info">
+                            <p>AC Unistallation Dismantling</p>
+                            <a href="#">Details</a>
+                        </div>
+                        <div class="booking-input">
+                            <div class="unit-selector">
+                                <p>Ton(s)</p>
+                                <a id="ac-basic-service-tons-minus" class="value-changer" href="#"><i class="fas fa-minus-square"></i></a>
+                                <input id="ac-basic-service-tons" class="unit" type="text" value="1.5" disabled>
+                                <a id="ac-basic-service-tons-plus" class="value-changer" href="#"><i class="fas fa-plus-square"></i></a>                                
+                            </div>
+                            <div class="unit-selector">
+                                <p>Unit(s)</p>
+                                <a class="value-changer" href="#"><i class="fas fa-minus-square"></i></a>
+                                <input class="unit" type="text" value="1" disabled>
+                                <a class="value-changer" href="#"><i class="fas fa-plus-square"></i></a>
+                            </div>
+    
+                            <p class="price">499 TK</p>
+                            <a class="book" href="#">Book Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -249,9 +249,43 @@
         </div>
     </div>
 
-
-
-
+    <!-- ac-installation-uninstallation Modal -->
+    <div class="modal fade" id="ac-installation-uninstallationModal" tabindex="-1" role="dialog" aria-labelledby="ac-installation-uninstallationModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="booking-form">
+                    <div class="row-custom">
+                        <div class="booking-info">
+                            <p>AC Installation Uninstallation</p>
+                            <a href="#">Details</a>
+                        </div>
+                        <div class="booking-input">
+                            <div class="unit-selector">
+                                <p>Ton(s)</p>
+                                <a id="ac-basic-service-tons-minus" class="value-changer" href="#"><i class="fas fa-minus-square"></i></a>
+                                <input id="ac-basic-service-tons" class="unit" type="text" value="1.5" disabled>
+                                <a id="ac-basic-service-tons-plus" class="value-changer" href="#"><i class="fas fa-plus-square"></i></a>                                
+                            </div>
+                            <div class="unit-selector">
+                                <p>Unit(s)</p>
+                                <a class="value-changer" href="#"><i class="fas fa-minus-square"></i></a>
+                                <input class="unit" type="text" value="1" disabled>
+                                <a class="value-changer" href="#"><i class="fas fa-plus-square"></i></a>
+                            </div>
+    
+                            <p class="price">499 TK</p>
+                            <a class="book" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <!-- BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -259,6 +293,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
     <!-- JS -->
-    <script src="./js/track-user.js"></script>
+    <script src="../js/track-user.js"></script>
 </body>
-</html>
