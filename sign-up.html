@@ -14,6 +14,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/sign-up.css">
+    <link rel="stylesheet" href="./css/footer.css">
 
 </head>
 <body>
@@ -24,8 +25,13 @@
     <div class="sign-up-form">
         <div class="form">
             <form action="get">
-                <label for="name">Name</label><br>
-                <input type="text" placeholder="type name..." required><br>
+                <div class="form-group">
+                    <label for="name">Name</label><br>
+                    <input type="text" placeholder="type name..." required><br>
+                    <div class="invalid-feedback">
+                        Name must be between 2 to 10 characters.
+                    </div>
+                </div>
                 <label for="phone">Phone Number</label><br>
                 <span>+880</span><input class="phone-input" type="phone" placeholder="type phone number..." required><br>
                 <label for="email">Email Address</label><br>
@@ -40,6 +46,32 @@
             </form>
         </div>
     </div>
+    <footer>
+        <div class="container footer-links">
+            <a href="./about-us.html">About us</a>
+            <a href="./terms-condition.html">Terms and Condition</a>
+            <a href="./privacy-policy.html">Privacy-Policy</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact">Contact us</a>
+        </div>
+        <hr>
+        <div class="container service-place">
+            <p>Servicing in - Dhaka & Chittagong</p>
+        </div>
+        <hr>
+        <div class="container copyright">
+            <div>
+                <img src="./site-identy-img/logo.png" alt="Shob Service">
+                <p>2020-21 Shobservice Technologies BD PVT. LTD.</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/shobservice" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://www.facebook.com/shobservice" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://www.facebook.com/shobservice" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.facebook.com/shobservice" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <!-- BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

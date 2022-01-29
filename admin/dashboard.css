@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    color: red;
+}
+
+.admin-form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    display: inline-block;
+    padding: 20px;
+}
+input{
+    margin-bottom: 20px;
+}
+
+#main-dashboard{
+    display: none;
+}

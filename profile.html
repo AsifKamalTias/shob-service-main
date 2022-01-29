@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search | Shob Service</title>
+    <title>Shob Service</title>
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -14,9 +14,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/items.css">
+    <link rel="stylesheet" href="./css/profile.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/search.css">
 </head>
 <body>
     <header class="header sticky-top">
@@ -60,31 +59,51 @@
     </header>
     <main>
         <div class="container">
-            <br/>
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
-                    <form class="card">
-                        <div class="card-body row no-gutters align-items-center">
-                            <!--end of col-->
-                            <div class="col">
-                                <input class="form-control form-control-borderless" id="search-input-user" type="text" placeholder="Search Services...">
-                            </div>
-                            <!--end of col-->
-                            <div class="col-auto">
-                                <button class="btn btn-success" id="search-btn" type="button"><i class="fas fa-search"></i></button>
-                            </div>
-                            <!--end of col-->
-                        </div>
-                    </form>
+            <div class="row">
+                <div class="profile-aside col-md-3">
+                    <div class="profile-img-view">
+                        <img src="./images/user.jpg" alt="">
+                    </div>
+                    <div class="profile-name">
+                        <h4>John Doe</h4>
+                    </div>
+                    <div class="profile-desc">
+                        <p><b>Phone:</b> +8801839385832</p>
+                        <p><b>Email:</b> asifkamaltias@gmail.com</p>
+                        <p><b>Address:</b> 190/D East Rampura, Dhaka-1219</p>
+                    </div>
+                    <div class="btn-edit-profile">
+                        <a href="#" class="btn btn-success">Edit Profile</a>
+                    </div>
                 </div>
-                <!--end of col-->
-            </div>
-        </div>
-        <div class="searched-for container" id="searched-for">
-            <p id="searched-for-text"></p>
-        </div>
-        <div class="search-results" id="search-results">
-    
+                <div class="col-md-8 order-list">
+                    <h4>Order List</h4>
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>AC Servicing/Repair</td>
+                            <td>13 November, 2021</td>
+                            <td>Pending</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Car Care</td>
+                            <td>13 April, 2021</td>
+                            <td>Done</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            <div>
         </div>
     </main>
     <footer>
@@ -113,49 +132,7 @@
             </div>
         </div>
     </footer>
-    <!-- Modal -->
-    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="modal-contents">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h3>Sign in</h3>
-                    <div class="modal-inter-contents">
-                        <form>
-                            <div class="form-group">
-                              <label for="InputEmailSignIn">Email address</label>
-                              <input type="email" class="form-control" id="InputEmailSignIn" required>
-                            </div>
-                            <div class="form-group">
-                              <label for="InputPasswordSignIn">Password</label>
-                              <input type="password" class="form-control" id="InputPasswordSignIn" required>
-                            </div>
-                            <div class="form-group form-check">
-                              <input type="checkbox" class="form-check-input checkbox-site-theme" id="remeberPassword">
-                              <label class="form-check-label" for="remeberPassword">Remember me</label>
-                            </div>
-                            
-                            <div class="row justify-content-center">
-                                <button type="submit" class="btn btn-success btn-signInForm">Sign in</button>
-                            </div>
-                        </form>
-                          
-                        <div class="row justify-content-center">
-                            <a class="text-no" href="./forgot-password.html">Forgot Password?</a>
-                        </div>
-                        <br>
-                        <div class="row justify-content-center">
-                            <a class="text-no" href="./sign-up.html">Don't have an account? <span style="text-decoration: underline;">Sign up</span>.</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
+
 
     <!-- BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -164,6 +141,5 @@
     
     <!-- JS -->
     <script src="./js/track-user.js"></script>
-    <script src="./js/search.js"></script>
 </body>
 </html>
